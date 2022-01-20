@@ -21,9 +21,9 @@ public class Program {
 		System.out.println("Enter rental data");
 		System.out.print("Car model: ");
 		String carModel = sc.nextLine();
-		System.out.print("Pick (dd/MM/yyyy HH:mm): ");
+		System.out.print("Pick (dd/MM/yyyy HH:mm)...: ");
 		Date start = sdf.parse(sc.nextLine() );
-		System.out.print("Return (dd/MM/yyyy HH:mm): ");
+		System.out.print("Return (dd/MM/yyyy HH:mm).: ");
 		Date finish = sdf.parse(sc.nextLine() );
 		
 		CarRental cr = new CarRental(start, finish, new Vehicle(carModel) );
